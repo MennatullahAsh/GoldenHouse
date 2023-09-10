@@ -1,0 +1,11 @@
+.backBar{
+    background-color: #fff;
+    width: 100px;
+}
+.btnBar{
+    color: 'black';
+            font-size: '18px';
+            font-weight: 'bold';
+            margin-left: '20px';
+            text-decoration: 'none';
+}
