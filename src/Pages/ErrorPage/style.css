@@ -6,10 +6,10 @@
 
 .overlay {
     text-align: center;
-    color: #001D58;
+    color: #56281B;
 }
 .overlay h1{
-    color: #EE8400;
+    color: #E82A36;
     letter-spacing: 20px;
     font-size: 220px;
     font-weight: 900;
@@ -18,11 +18,11 @@
 }
 
 span {
-    color: #EE8400;
+    color: #E82A36;
     font-weight: bolder;
 }
 
 .paragraph {
     line-height: 10px;
-    color: #001D58;
+    color: #56281B;
 }

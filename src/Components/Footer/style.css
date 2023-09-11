@@ -1,10 +1,17 @@
- .copyright{
-    margin-top: 10px;
-    background-color: #001D58;
-    height: 50px;
-    width: 100%;
-    color: #fff;
-    align-items: center;
+.footer {
+    background-color: #E82A36;
+
+}
+
+.social-icons {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -10px;
+    padding-top: 5px;
+}
+
+.copyright {
+    color: #fff;
+    padding-bottom: 11px;
 }

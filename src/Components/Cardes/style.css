@@ -1,0 +1,22 @@
+.btnCarde {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+}
+
+.btnCarde .btnDetails {
+    background-color: #56281B;
+    padding: 6px 25px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btnCarde .btnSign {
+    background-color: #E82A36;
+    padding: 6px 32px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
