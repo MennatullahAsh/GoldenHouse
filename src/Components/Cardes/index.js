@@ -18,6 +18,7 @@ export default function MediaCard({ courses }) {
     const { id, url, title, time, axes } = courses;
 
     return (
+        
         <Card sx={{ maxWidth: 345 }} >
             <CardMedia
                 sx={{ height: 230 }}

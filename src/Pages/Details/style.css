@@ -1,11 +1,58 @@
+.container{
+    display: flex;
+    gap: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+}
+.info{
+    margin-top: -120px;
+    width: 45%;
+    padding-right: 30px;
+}
 .title{
-    color: #001D58;
-}
-.contact{
-    padding: 20px 100px;
-    line-height: 50px;
-    margin-top: 20px;
-}
-.contact p{
+    font-size: 24px;
+    color: #E82A36;
     font-weight: bold;
+    margin-bottom: -10px;
+}
+.time{
+    font-size: 17px;
+    font-weight: lighter;
+    margin-right: 230px;
+    
+}
+.axes {
+    font-size: 20px;
+}
+.axes span{
+    line-height: 50px;
+    padding-right: 8px;
+    font-size: 24px;
+    color: #56281B;
+}
+
+.img{
+    margin-top: 100px;
+    width: 500px;
+    height: 600px;
+    margin-bottom: 30px;
+}
+.SignD  {
+  display: flex;
+  gap: 25px;
+    margin-top: -150px;
+    margin-right: 990px;
+}
+.SignD .btnSignD {
+    background-color: #E82A36;
+    padding: 6px 35px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.SignD .back {
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
 }
