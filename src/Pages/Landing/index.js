@@ -4,6 +4,7 @@ import Typography from '@mui/material/Typography';
 import { Hero } from '../../Components';
 import { NavBar } from '../../Components';
 import Cardes from '../../Components/Cardes';
+import About from '../../Components/About';
 
 const Landing = () => {
     const [data, setData] = useState([]);
@@ -17,18 +18,26 @@ const Landing = () => {
         <>
             <NavBar />
             <Hero />
-            <Typography variant="h4" align="center" gutterBottom style={
+            <About />
+            <Typography variant="h3" align="center" gutterBottom style={
                 {
                     paddingTop: '30px',
-                    fontWeight: 'bold'
+                    fontWeight: 'bold',
+                    color: "#E82A36",
                 }
             }>
                 الدورات المميزة
             </Typography>
+            <h1 style={{
+                marginTop: '-55px',
+                textAlign: 'center',
+                fontSize:'70px',
+                fontWeight:'bolder'
+            }}> _________ </h1>
             <Cardes />
-            
+
             {console.log(data, 'courses')}
-            <CardContainer courses ={data} />        </>
+            <CardContainer courses={data} />        </>
     );
 }
 
