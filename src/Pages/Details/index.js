@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import Footer from '../../Components/Footer';
-import ExitToAppIcon from '@mui/icons-material/ExitToApp';
+import { NavBar } from '../../Components';
 import style from './style.css'
 
 function Details() {
@@ -27,6 +27,7 @@ function Details() {
 
     return (
         <>
+            <NavBar />
             <div className='container'>
                 <div className='info'>
                     <p className='title'> {course.title}
@@ -42,26 +43,21 @@ function Details() {
                 </div>
 
                 <div className='img'>
-                    {course.url && <img src={course.url} alt={course.title} style={{ maxWidth: '100%' }} />}
+                    {course.url && <img src={course.url} alt={course.title} style={{ maxWidth: '80%' }} />}
 
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '20px' ,justifyContent:'center' }}>
-                        {course.img1 && <img src={course.img1} alt={course.title} style={{ width: '110px', height: '100px' }} />}
-                        {course.img2 && <img src={course.img2} alt={course.title} style={{ width: '110px', height: '100px' }} />}
-                        {course.img3 && <img src={course.img3} alt={course.title} style={{ width: '110px', height: '100px' }} />}
-                    </div>
+
                 </div>
 
             </div>
             <div className='SignD'>
                 <Link to={`/Landing`} size="small"
                     color="primary" className='back'
-                > <ExitToAppIcon/> </Link>
+                > رجوع </Link>
                 <Link to={`/Sign`} size="small"
                     color="primary" className='btnSignD'
                 >  سجل الآن  </Link>
-           </div>
-<br/>
-<br/>
+            </div>
+            <div style={{ height: '200px' }}></div>
             <Footer />
         </>
     );
