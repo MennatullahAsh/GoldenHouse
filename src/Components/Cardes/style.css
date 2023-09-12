@@ -3,10 +3,19 @@
     gap: 80px;
     justify-content: center;
 }
-
+.card{
+    width: 80%;
+    margin: auto;
+}
+.cardContent{
+    height: '100px';
+}
+.description{
+    color: #000;
+}
 .btnCarde .btnDetails {
     background-color: #56281B;
-    padding: 6px 25px;
+    padding: 6px 20px;
     color: #fff;
     font-weight: 600;
     text-decoration: none;
@@ -15,7 +24,7 @@
 
 .btnCarde .btnSign {
     background-color: #E82A36;
-    padding: 6px 32px;
+    padding: 6px 25px;
     color: #fff;
     font-weight: 600;
     text-decoration: none;

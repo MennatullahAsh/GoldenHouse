@@ -31,8 +31,8 @@ const Landing = () => {
             <h1 style={{
                 marginTop: '-55px',
                 textAlign: 'center',
-                fontSize:'70px',
-                fontWeight:'bolder'
+                fontSize: '70px',
+                fontWeight: 'bolder'
             }}> _________ </h1>
             <Cardes />
 
