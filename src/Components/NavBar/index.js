@@ -10,7 +10,7 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-router-dom';
-
+import { Link as ScrollLink } from 'react-scroll';
 import logoImage from '../Utilis/images/logo.png';
 import style from './style.css'
 
@@ -39,7 +39,7 @@ function ResponsiveAppBar() {
         <AppBar position="static" className='AppBar'>
             <Container maxWidth="xl" className='backBar'>
                 <Toolbar disableGutters>
-                    <img src={logoImage} alt="Logo" style={{ marginRight: '16px' , width:'60px', height:'60px'}} />
+                    <img src={logoImage} alt="Logo" style={{ marginRight: '16px', width: '60px', height: '60px' }} />
 
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                         <IconButton
@@ -70,7 +70,7 @@ function ResponsiveAppBar() {
                                 display: { xs: 'block', md: 'none' },
                             }}
                         >
-                           
+
                         </Menu>
                     </Box>
                     <img
@@ -78,34 +78,49 @@ function ResponsiveAppBar() {
                         alt="Logo"
                         style={{ display: 'none', marginRight: '16px' }}
                     />
-                   
+
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'center' }}>
                         <Button className='btnBar' > <Link to='/' style={{
                             fontSize: '18px',
                             fontWeight: 'bold',
                             marginLeft: '20px',
                             textDecoration: 'none',
+                            color: '#000'
                         }}> الرئيسية</Link></Button>
-                        <Button className='btnBar' > <Link to='/' style={{
-                            fontSize: '18px',
-                            fontWeight: 'bold',
-                            marginLeft: '20px',
-                            textDecoration: 'none',
-                        }}> من نحن</Link></Button>
-                        <Button className='btnBar' > <Link to='/' style={{
-                            fontSize: '18px',
-                            fontWeight: 'bold',
-                            marginLeft: '20px',
-                            textDecoration: 'none',
-                        }}>  دوراتنا</Link></Button>
+
+                        <div className='ScrollToAbout'>
+                            <ScrollLink to="about-section" smooth={true} duration={500}>
+                                <Button className='btnBar' style={{
+                                    fontSize: '18px',
+                                    fontWeight: 'bold',
+                                    marginLeft: '20px',
+                                    textDecoration: 'none',
+                                    color: '#000'
+                                }}>
+                                    من نحن
+                                </Button>
+                            </ScrollLink>
+                        </div>
+                        <div className='ScrollToAbout'>
+                            <ScrollLink to="about-section" smooth={true} duration={700}>
+                                <Button className='btnBar' style={{
+                                    fontSize: '18px',
+                                    fontWeight: 'bold',
+                                    marginLeft: '20px',
+                                    textDecoration: 'none',
+                                    color: '#000'
+                                }}>
+                                    دوراتنا
+                                </Button>
+                            </ScrollLink>
+                        </div>
                     </Box>
 
 
                     <Box sx={{ flexGrow: 0 }}>
                         <Button
-                            // onClick={() => navigate('/')}
-                            >
-                            <Link to='/'
+                        >
+                            <Link to='/Sign'
                                 style={{
                                     color: 'black',
                                     backgroundColor: '#001D58',
@@ -122,6 +137,7 @@ function ResponsiveAppBar() {
                             sx={{ mt: '45px' }}
                             id="menu-appbar"
                             anchorEl={anchorElUser}
+                            color='#000'
                             anchorOrigin={{
                                 vertical: 'top',
                                 horizontal: 'right',

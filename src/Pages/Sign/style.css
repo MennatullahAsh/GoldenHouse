@@ -1,0 +1,52 @@
+.boxForm{
+    width: 80%;
+    margin: auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+.form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+
+.form-label {
+    margin: 0;
+    width: 300px;
+    font-size: 30px;
+}
+
+.form-input {
+    width: 500px;
+    flex-grow: 1;
+}
+.form-input-select{
+}
+.submit{
+    background-color: #E82A36;
+    border: none;
+    font-size: 23px;
+    font-weight: 700;
+    color: #fff;
+    padding: 5px 40px;
+    border-radius: 5px;
+    float: left;
+    margin-top: 10px;
+}
+#radio-buttons{
+    margin: 30px 20px 10px 90px;
+    color: #000 !important;
+    font-size: 22px;
+    font-weight: 900;
+    padding-left: 100px;
+    
+}
+.row-radio-buttons-group    {
+color: #000;
+}
+
+.form-error {
+    color: #ff0000;
+    font-size: 14px;
+    margin-top: 4px;
+}

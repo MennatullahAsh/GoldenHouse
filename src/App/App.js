@@ -5,7 +5,7 @@ import { Layout, Landing } from '../Pages';
 import ErrorPage from '../Pages/ErrorPage';
 import Details from '../Pages/Details';
 import Sign from '../Pages/Sign';
-// import Landing from '../Pages/Landing'
+
 function App() {
   document.documentElement.dir = 'rtl';
 
