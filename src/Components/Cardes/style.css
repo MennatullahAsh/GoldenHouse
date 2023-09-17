@@ -3,16 +3,20 @@
     gap: 80px;
     justify-content: center;
 }
-.card{
+
+.card {
     width: 80%;
     margin: auto;
 }
-.cardContent{
+
+.cardContent {
     height: '100px';
 }
-.description{
+
+.description {
     color: #000;
 }
+
 .btnCarde .btnDetails {
     background-color: #56281B;
     padding: 6px 20px;
@@ -30,4 +34,3 @@
     text-decoration: none;
     border-radius: 4px;
 }
-

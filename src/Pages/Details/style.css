@@ -1,31 +1,36 @@
-.container{
+.container {
     display: flex;
     gap: 130px;
     font-family: Arial, Helvetica, sans-serif;
     align-items: center;
 }
-.info{
+
+.info {
     margin-top: -120px;
     width: 45%;
     padding-right: 30px;
 }
-.title{
+
+.title {
     font-size: 24px;
     color: #E82A36;
     font-weight: bold;
     margin-bottom: -10px;
     margin-top: 90px;
 }
-.time{
+
+.time {
     font-size: 17px;
     font-weight: lighter;
     margin-right: 230px;
-    
+
 }
+
 .axes {
     font-size: 20px;
 }
-.axes span{
+
+.axes span {
     line-height: 50px;
     padding-right: 8px;
     padding-top: 8px;
@@ -33,18 +38,20 @@
     color: #56281B;
 }
 
-.img{
+.img {
     margin-top: 100px;
     width: 500px;
     height: 600px;
     margin-bottom: 30px;
 }
-.SignD  {
-  display: flex;
-  gap: 25px;
+
+.SignD {
+    display: flex;
+    gap: 25px;
     margin-top: -290px;
     margin-right: 850px;
 }
+
 .SignD .btnSignD {
     background-color: #E82A36;
     padding: 8px 40px;
@@ -53,11 +60,12 @@
     text-decoration: none;
     border-radius: 4px;
 }
+
 .SignD .back {
     background-color: #56281B;
-        padding: 8px 42px;
-        color: #fff;
-        font-weight: 600;
-        text-decoration: none;
-        border-radius: 4px;
+    padding: 8px 42px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 4px;
 }
