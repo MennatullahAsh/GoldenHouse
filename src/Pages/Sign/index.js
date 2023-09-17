@@ -10,7 +10,7 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
 import Alert from '@mui/material/Alert';
-
+import ErrorIcon from '@mui/icons-material/Error';
 import * as yup from 'yup';
 
 import style from './style.css'
@@ -21,8 +21,8 @@ export default function FullWidthTextField() {
     });
 
     const [formErrors, setFormErrors] = React.useState({});
-    const [submissionStatus, setSubmissionStatus] = React.useState(null); // حالة الإرسال
-    const [formData, setFormData] = React.useState({ // حالة تخزين البيانات المدخلة
+    const [submissionStatus, setSubmissionStatus] = React.useState(null);
+    const [formData, setFormData] = React.useState({
         name: '',
         email: '',
         specialization: '',
@@ -92,9 +92,9 @@ export default function FullWidthTextField() {
 
     return (
         <>
-            <Typography variant="h4" gutterBottom style={
+            <Typography className='titleSign' variant="h4" gutterBottom style={
                 {
-                    paddingTop: '30px',
+                    paddingTop: '27px',
                     fontWeight: 'bold',
                     color: "#E82A36",
                     width: '80%',
@@ -117,8 +117,11 @@ export default function FullWidthTextField() {
                             value={formData.name}
                             onChange={handleChange}
                             className='form-input' />
-                        {formErrors.name && <div className='form-error'>{formErrors.name}</div>}
                     </div>
+                    {formErrors.name && <p className='form-error'><ErrorIcon style={{
+                        fontSize: '13px',
+                        margin: '0px 1px -2px 9px'
+                    }} />{formErrors.name}</p>}
                     <div className='form'>
                         <p className='form-label' >الإيميل </p>
                         <TextField
@@ -128,7 +131,6 @@ export default function FullWidthTextField() {
                             value={formData.email}
                             onChange={handleChange}
                             className='form-input' />
-                        {formErrors.email && <div className='form-error'>{formErrors.email}</div>}
                     </div>
                     <div className='form'>
                         <p className='form-label' > التخصص </p>
@@ -139,7 +141,6 @@ export default function FullWidthTextField() {
                             value={formData.specialization}
                             onChange={handleChange}
                             className='form-input' />
-                        {formErrors.specialization && <div className='form-error'>{formErrors.specialization}</div>}
                     </div>
                     <div className='form'>
                         <p className='form-label' >رقم الجوال </p>
@@ -150,8 +151,12 @@ export default function FullWidthTextField() {
                             value={formData.mobile}
                             onChange={handleChange}
                             className='form-input' />
-                        {formErrors.mobile && <div className='form-error'>{formErrors.mobile}</div>}
                     </div>
+                    {formErrors.mobile && <div className='form-error'> <ErrorIcon style={{
+                        fontSize: '13px',
+                        margin: '0px 1px -2px 9px'
+                    }} />{formErrors.mobile}</div>}
+                    <br />
                     <TextField
                         fullWidth
                         label=" الـدورة التي أرغـب بالتسجيـل بـها"
