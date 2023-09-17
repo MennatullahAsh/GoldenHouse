@@ -1,13 +1,13 @@
-.boxForm{
+.boxForm {
     width: 80%;
     margin: auto;
     font-family: 'Times New Roman', Times, serif;
 }
+
 .form {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-    
 }
 
 .form-label {
@@ -20,9 +20,8 @@
     width: 500px;
     flex-grow: 1;
 }
-.form-input-select{
-}
-.submit{
+
+.submit {
     background-color: #E82A36;
     border: none;
     font-size: 23px;
@@ -33,20 +32,60 @@
     float: left;
     margin-top: 10px;
 }
-#radio-buttons{
+
+#radio-buttons {
     margin: 30px 20px 10px 90px;
     color: #000 !important;
     font-size: 22px;
     font-weight: 900;
     padding-left: 100px;
-    
+
 }
-.row-radio-buttons-group    {
-color: #000;
+
+.row-radio-buttons-group {
+    color: #000;
 }
 
 .form-error {
     color: #ff0000;
     font-size: 14px;
-    margin-top: 4px;
+    margin-top: -1px;
+    margin-right: 200px;
+}
+
+@media (max-width: 768px) {
+    .boxForm {
+        width: 100%;
+    }
+
+    .form-label {
+        font-size: 20px;
+        width: 50%;
+    }
+
+    .form {
+        gap: 20px;
+    }
+
+    .form-input {
+        width: 70%;
+    }
+
+    .submit {
+        font-size: 18px;
+    }
+
+    #radio-buttons {
+        font-size: 18px;
+        padding-left: 0;
+        margin: 20px 0;
+    }
+
+    .row-radio-buttons-group {
+        font-size: 16px;
+    }
+
+    .titleSign {
+        font-size: 25px;
+    }
 }
